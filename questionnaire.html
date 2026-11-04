@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<title>questionnaire</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css">
+<body>
+
+  <h2>hi</h2>
+
+<fieldset>
+ <legend>買書問題</legend>
+1.是否為南臺學生<input type="checkbox" id="student" name="student" value="Bike">
+ <label for="vehicle1"> 是</label><br>
+  
+<p>2.班級:</p>
+  <input type="radio" id="電商二甲" name="class" value="電商二甲">
+  <label for="電商二甲">電商二甲</label><br>
+  <input type="radio" id="隨修" name="class" value="隨修">
+  <label for="隨修">隨修</label><br>
+  <input type="radio" id="外校" name="class" value="外校">
+  <label for="外校">外校</label><br><br>
+
+<p>3.購買什麼書</p>
+
+  <select class="w3-select" name="購買什麼書">
+    <option value="" disabled selected>請選擇您的選項</option>
+    <option value="行銷學">行銷學</option>
+    <option value="網頁設計">網頁設計</option>
+    <option value="統計學">統計學</option>
+  </select>
+
+<form class="w3-container w3-light-grey">
+  <p>4.若遇到以下突發狀況，您同意哪些配套處理方式？（可多選）</p>
+  <p>
+  <input class="w3-check" type="checkbox" checked="checked">
+  <label>書籍若有缺頁、破損，同意由班級幹部統一收集並向書商更換</label></p>
+  <p>
+  <input class="w3-check" type="checkbox">
+  <label> 若書商因庫存不足延遲發貨，願意配合等待</label></p>
+  <p>
+  <input class="w3-check" type="checkbox">
+  <label>願意協助班級幹部一起搬運、分發書籍</label></p>
+</form>
+
+  <p>5.為了方便發書與攜帶，您希望幹部在分發時提供哪些額外協助或包裝？（可複選）</p>
+    <select name="book[]" size="5" multiple>
+    <option value="每一套書請用橡皮筋或紙帶綁好，方便拿取">每一套書請用橡皮筋或紙帶綁好，方便拿取
+    <option value="請附贈透明書套（費用內含或另外結算）"selected>請附贈透明書套（費用內含或另外結算）
+    <option value="我不需要特殊包裝，裸書點交即可">我不需要特殊包裝，裸書點交即可
+  </select></p>
+
+  <label for="fname">6.姓名:</label>
+  <input type="text" id="name" name="fname" value=""><br>
+
+<br><label for="quantity">7.年齡:</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="99"></br>
+
+  <br><label for="birthday">8.送達日期:</label>
+  <input type="date" id="bdate" name="送達日期">
+
+
+  <p><label for="w3review"> 9.關於本次團購，是否有任何特殊的退換書、個別繳費困難或其他建議？（若無，請填「無」）:</label></p>
+  <textarea name="trouble" rows="4" cols="50"></textarea>
+  <br>
+</fieldset>
+
+  <input type="submit" value="送出">
+
+</form>
+
+</body>
+</html>
